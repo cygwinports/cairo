@@ -1,0 +1,9 @@
+category: Graphics X11
+requires: cygwin libX11 libXrender libfontconfig-devel glitz libpng12-devel
+sdesc: "Cross-device vector graphics library (development files, readmes)"
+ldesc: "Cairo is a vector graphics library with cross-device output
+support. Currently supported output targets include the X Window
+System and in-memory image buffers. PostScript and PDF file output is
+planned. Cairo is designed to produce identical output on all output
+media while taking advantage of display hardware acceleration when
+available (eg. through the X Render Extension)."

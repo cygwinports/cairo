@@ -1,0 +1,168 @@
+cairo
+-------------------------------------------
+Cairo is a vector graphics library with cross-device output
+support. Currently supported output targets include the X Window
+System and in-memory image buffers. PostScript and PDF file output is
+planned. Cairo is designed to produce identical output on all output
+media while taking advantage of display hardware acceleration when
+available (eg. through the X Render Extension).
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  libX11_6-1.0.0-2
+  libXrender1-0.9.0.2-1
+  libfontconfig1-2.2.2-1
+  libglitz1-0.5.3-1
+  libpng12-1.2.8-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.1.6-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gtk-doc-1.4-1
+  libtool1.5-1.5.20-2
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://cairographics.org/
+
+Canonical download:
+  http://cairographics.org/snapshots/
+
+-------------------------------------------
+
+Build instructions:
+  unpack cairo-1.0.2-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./cairo-1.0.2-1.sh all
+
+This will create:
+  /usr/src/cairo-1.0.2-1-src.tar.bz2
+  /usr/src/cairo-1.0.2-1.tar.bz2
+  /usr/src/cairo-doc-1.0.2-1.tar.bz2
+  /usr/src/libcairo2-1.0.2-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the libcairo2 package:
+
+  /usr/bin/cygcairo-2.dll
+
+Files included in the main package:
+
+  /usr/include/cairo/cairo-features.h
+  /usr/include/cairo/cairo-ft.h
+  /usr/include/cairo/cairo-glitz.h
+  /usr/include/cairo/cairo-pdf.h
+  /usr/include/cairo/cairo-ps.h
+  /usr/include/cairo/cairo-xlib-xrender.h
+  /usr/include/cairo/cairo-xlib.h
+  /usr/include/cairo/cairo.h
+  /usr/lib/libcairo.dll.a
+  /usr/lib/libcairo.la
+  /usr/lib/pkgconfig/cairo.pc
+  /usr/share/doc/Cygwin/cairo-1.0.4.README
+  /usr/share/doc/cairo-1.0.4/AUTHORS
+  /usr/share/doc/cairo-1.0.4/COPYING
+  /usr/share/doc/cairo-1.0.4/COPYING-LGPL-2.1
+  /usr/share/doc/cairo-1.0.4/COPYING-MPL-1.1
+  /usr/share/doc/cairo-1.0.4/ChangeLog
+  /usr/share/doc/cairo-1.0.4/INSTALL
+  /usr/share/doc/cairo-1.0.4/NEWS
+  /usr/share/doc/cairo-1.0.4/README
+  /usr/share/doc/cairo-1.0.4/TODO
+
+Files included in the runtime library package:
+
+  /usr/bin/cygcairo-2.dll
+
+Files included in the doc package:
+
+  /usr/share/gtk-doc/html/cairo/Drawing.html
+  /usr/share/gtk-doc/html/cairo/Fonts.html
+  /usr/share/gtk-doc/html/cairo/Support.html
+  /usr/share/gtk-doc/html/cairo/Surfaces.html
+  /usr/share/gtk-doc/html/cairo/bindings-errors.html
+  /usr/share/gtk-doc/html/cairo/bindings-fonts.html
+  /usr/share/gtk-doc/html/cairo/bindings-memory.html
+  /usr/share/gtk-doc/html/cairo/bindings-overloading.html
+  /usr/share/gtk-doc/html/cairo/bindings-path.html
+  /usr/share/gtk-doc/html/cairo/bindings-patterns.html
+  /usr/share/gtk-doc/html/cairo/bindings-return-values.html
+  /usr/share/gtk-doc/html/cairo/bindings-streams.html
+  /usr/share/gtk-doc/html/cairo/bindings-surfaces.html
+  /usr/share/gtk-doc/html/cairo/cairo-Error-handling.html
+  /usr/share/gtk-doc/html/cairo/cairo-Font-Options.html
+  /usr/share/gtk-doc/html/cairo/cairo-FreeType-Fonts.html
+  /usr/share/gtk-doc/html/cairo/cairo-Glitz-Surfaces.html
+  /usr/share/gtk-doc/html/cairo/cairo-Image-Surfaces.html
+  /usr/share/gtk-doc/html/cairo/cairo-PDF-Surfaces.html
+  /usr/share/gtk-doc/html/cairo/cairo-PNG-Support.html
+  /usr/share/gtk-doc/html/cairo/cairo-Paths.html
+  /usr/share/gtk-doc/html/cairo/cairo-Patterns.html
+  /usr/share/gtk-doc/html/cairo/cairo-PostScript-Surfaces.html
+  /usr/share/gtk-doc/html/cairo/cairo-Scaled-Fonts.html
+  /usr/share/gtk-doc/html/cairo/cairo-Text.html
+  /usr/share/gtk-doc/html/cairo/cairo-Transformations.html
+  /usr/share/gtk-doc/html/cairo/cairo-Types.html
+  /usr/share/gtk-doc/html/cairo/cairo-Version-Information.html
+  /usr/share/gtk-doc/html/cairo/cairo-Win32-Fonts.html
+  /usr/share/gtk-doc/html/cairo/cairo-Win32-Surfaces.html
+  /usr/share/gtk-doc/html/cairo/cairo-XLib-Surfaces.html
+  /usr/share/gtk-doc/html/cairo/cairo-cairo-font-face-t.html
+  /usr/share/gtk-doc/html/cairo/cairo-cairo-matrix-t.html
+  /usr/share/gtk-doc/html/cairo/cairo-cairo-surface-t.html
+  /usr/share/gtk-doc/html/cairo/cairo-cairo-t.html
+  /usr/share/gtk-doc/html/cairo/cairo.devhelp
+  /usr/share/gtk-doc/html/cairo/home.png
+  /usr/share/gtk-doc/html/cairo/index.html
+  /usr/share/gtk-doc/html/cairo/index.sgml
+  /usr/share/gtk-doc/html/cairo/ix01.html
+  /usr/share/gtk-doc/html/cairo/language-bindings.html
+  /usr/share/gtk-doc/html/cairo/left.png
+  /usr/share/gtk-doc/html/cairo/pt01.html
+  /usr/share/gtk-doc/html/cairo/pt02.html
+  /usr/share/gtk-doc/html/cairo/right.png
+  /usr/share/gtk-doc/html/cairo/style.css
+  /usr/share/gtk-doc/html/cairo/up.png
+
+------------------
+
+Port Notes:
+
+----- version 1.0.4-1 -----
+Version bump.
+
+----- version 1.0.2-1 -----
+Version bump.
+Enabled backends: xlib, image, glitz, pdf, ps.
+
+----- version 1.0.0-2 -----
+Repackaged.
+
+----- version 1.0.0-1 -----
+First official release.
+Enabled backends: xlib, image, and glitz.
+
+----- version 0.9.2-1 -----
+Version bump; this version should be API compatible with 1.0.
+Includes support for both X11 and Win32 backends.
+
+----- version 0.3.0-1 -----
+Version bump.
+
+----- version 0.2.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
