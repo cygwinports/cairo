@@ -8,27 +8,27 @@ media while taking advantage of display hardware acceleration when
 available (eg. through the X Render Extension).
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  libX11_6-1.0.0-2
-  libXrender1-0.9.0.2-1
-  libfontconfig1-2.2.2-1
-  libglitz1-0.5.3-1
+  cygwin-1.5.21-2
+  libX11_6-1.0.3-1
+  libXrender1-0.9.1-1
+  libfontconfig1-2.4.1-1
+  libglitz1-0.5.6-1
   libpng12-1.2.8-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
+  cygwin-1.5.21-2
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.1.6-1
+  binutils-20060817-1
+  cygport-0.2.5-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  gtk-doc-1.4-1
-  libtool1.5-1.5.20-2
-  make-3.80-1
+  gtk-doc-1.7-1
+  libtool1.5-1.5.23a-1
+  make-3.81-1
   pkg-config-0.20-1
-  sed-4.1.4-1
+  sed-4.1.5-1
 
 Canonical homepage:
   http://cairographics.org/
@@ -39,37 +39,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack cairo-1.0.2-1-src.tar.bz2
+  unpack cairo-1.2.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./cairo-1.0.2-1.sh all
+  cygport ./cairo-1.2.4-X.cygport all
 
 This will create:
-  /usr/src/cairo-1.0.2-1-src.tar.bz2
-  /usr/src/cairo-1.0.2-1.tar.bz2
-  /usr/src/cairo-doc-1.0.2-1.tar.bz2
-  /usr/src/libcairo2-1.0.2-1.tar.bz2
+  /usr/src/cairo-1.2.4-X-src.tar.bz2
+  /usr/src/cairo-1.2.4-X.tar.bz2
+  /usr/src/cairo-doc-1.2.4-X.tar.bz2
+  /usr/src/libcairo2-1.2.4-X.tar.bz2
+  /usr/src/libcairo-devel-1.2.4-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the libcairo2 package:
+Files included in the binary packages:
 
-  /usr/bin/cygcairo-2.dll
-
-Files included in the main package:
-
-  /usr/include/cairo/cairo-features.h
-  /usr/include/cairo/cairo-ft.h
-  /usr/include/cairo/cairo-glitz.h
-  /usr/include/cairo/cairo-pdf.h
-  /usr/include/cairo/cairo-ps.h
-  /usr/include/cairo/cairo-xlib-xrender.h
-  /usr/include/cairo/cairo-xlib.h
-  /usr/include/cairo/cairo.h
-  /usr/lib/libcairo.dll.a
-  /usr/lib/libcairo.la
-  /usr/lib/pkgconfig/cairo.pc
+(cairo)
   /usr/share/doc/Cygwin/cairo-1.0.4.README
   /usr/share/doc/cairo-1.0.4/AUTHORS
   /usr/share/doc/cairo-1.0.4/COPYING
@@ -81,12 +68,32 @@ Files included in the main package:
   /usr/share/doc/cairo-1.0.4/README
   /usr/share/doc/cairo-1.0.4/TODO
 
-Files included in the runtime library package:
-
+(libcairo2)
   /usr/bin/cygcairo-2.dll
 
-Files included in the doc package:
+(libcairo-devel)
+  /usr/include/cairo/cairo-features.h
+  /usr/include/cairo/cairo-ft.h
+  /usr/include/cairo/cairo-glitz.h
+  /usr/include/cairo/cairo-pdf.h
+  /usr/include/cairo/cairo-ps.h
+  /usr/include/cairo/cairo-svg.h
+  /usr/include/cairo/cairo-xlib-xrender.h
+  /usr/include/cairo/cairo-xlib.h
+  /usr/include/cairo/cairo.h
+  /usr/lib/libcairo.dll.a
+  /usr/lib/libcairo.la
+  /usr/lib/pkgconfig/cairo-ft.pc
+  /usr/lib/pkgconfig/cairo-glitz.pc
+  /usr/lib/pkgconfig/cairo-pdf.pc
+  /usr/lib/pkgconfig/cairo-png.pc
+  /usr/lib/pkgconfig/cairo-ps.pc
+  /usr/lib/pkgconfig/cairo-svg.pc
+  /usr/lib/pkgconfig/cairo-xlib-xrender.pc
+  /usr/lib/pkgconfig/cairo-xlib.pc
+  /usr/lib/pkgconfig/cairo.pc
 
+(cairo-doc)
   /usr/share/gtk-doc/html/cairo/Drawing.html
   /usr/share/gtk-doc/html/cairo/Fonts.html
   /usr/share/gtk-doc/html/cairo/Support.html
@@ -103,13 +110,13 @@ Files included in the doc package:
   /usr/share/gtk-doc/html/cairo/cairo-Error-handling.html
   /usr/share/gtk-doc/html/cairo/cairo-Font-Options.html
   /usr/share/gtk-doc/html/cairo/cairo-FreeType-Fonts.html
-  /usr/share/gtk-doc/html/cairo/cairo-Glitz-Surfaces.html
   /usr/share/gtk-doc/html/cairo/cairo-Image-Surfaces.html
   /usr/share/gtk-doc/html/cairo/cairo-PDF-Surfaces.html
   /usr/share/gtk-doc/html/cairo/cairo-PNG-Support.html
   /usr/share/gtk-doc/html/cairo/cairo-Paths.html
   /usr/share/gtk-doc/html/cairo/cairo-Patterns.html
   /usr/share/gtk-doc/html/cairo/cairo-PostScript-Surfaces.html
+  /usr/share/gtk-doc/html/cairo/cairo-SVG-Surfaces.html
   /usr/share/gtk-doc/html/cairo/cairo-Scaled-Fonts.html
   /usr/share/gtk-doc/html/cairo/cairo-Text.html
   /usr/share/gtk-doc/html/cairo/cairo-Transformations.html
@@ -123,10 +130,12 @@ Files included in the doc package:
   /usr/share/gtk-doc/html/cairo/cairo-cairo-surface-t.html
   /usr/share/gtk-doc/html/cairo/cairo-cairo-t.html
   /usr/share/gtk-doc/html/cairo/cairo.devhelp
+  /usr/share/gtk-doc/html/cairo/cairo.devhelp2
   /usr/share/gtk-doc/html/cairo/home.png
   /usr/share/gtk-doc/html/cairo/index.html
   /usr/share/gtk-doc/html/cairo/index.sgml
   /usr/share/gtk-doc/html/cairo/ix01.html
+  /usr/share/gtk-doc/html/cairo/ix02.html
   /usr/share/gtk-doc/html/cairo/language-bindings.html
   /usr/share/gtk-doc/html/cairo/left.png
   /usr/share/gtk-doc/html/cairo/pt01.html
@@ -138,6 +147,9 @@ Files included in the doc package:
 ------------------
 
 Port Notes:
+
+----- version 1.2.4-1 -----
+Version bump.  Rearranged packages.
 
 ----- version 1.0.4-1 -----
 Version bump.
