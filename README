@@ -23,14 +23,14 @@ Build requirements:
   autoconf2.5-2.60-1
   automake1.9-1.9.6-1
   binutils-20060817-1
-  cygport-0.2.6-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
   gtk-doc-1.7-1
-  libtool1.5-1.5.23a-1
+  libtool1.5-1.5.23a-2
   make-3.81-1
-  pkg-config-0.20-1
-  sed-4.1.5-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical homepage:
   http://cairographics.org/
@@ -41,34 +41,34 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack cairo-1.4.4-X-src.tar.bz2
+  unpack cairo-1.4.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./cairo-1.4.4-X.cygport all
+  cygport ./cairo-1.4.6-X.cygport all
 
 This will create:
-  /usr/src/cairo-1.4.4-X-src.tar.bz2
-  /usr/src/cairo-1.4.4-X.tar.bz2
-  /usr/src/cairo-doc-1.4.4-X.tar.bz2
-  /usr/src/libcairo2-1.4.4-X.tar.bz2
-  /usr/src/libcairo-devel-1.4.4-X.tar.bz2
+  /usr/src/cairo-1.4.6-X-src.tar.bz2
+  /usr/src/cairo-1.4.6-X.tar.bz2
+  /usr/src/cairo-doc-1.4.6-X.tar.bz2
+  /usr/src/libcairo2-1.4.6-X.tar.bz2
+  /usr/src/libcairo-devel-1.4.6-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
 (cairo)
-  /usr/share/doc/Cygwin/cairo-1.4.4.README
-  /usr/share/doc/cairo-1.4.4/AUTHORS
-  /usr/share/doc/cairo-1.4.4/COPYING
-  /usr/share/doc/cairo-1.4.4/COPYING-LGPL-2.1
-  /usr/share/doc/cairo-1.4.4/COPYING-MPL-1.1
-  /usr/share/doc/cairo-1.4.4/ChangeLog
-  /usr/share/doc/cairo-1.4.4/INSTALL
-  /usr/share/doc/cairo-1.4.4/NEWS
-  /usr/share/doc/cairo-1.4.4/README
-  /usr/share/doc/cairo-1.4.4/TODO
+  /usr/share/doc/Cygwin/cairo-1.4.6.README
+  /usr/share/doc/cairo-1.4.6/AUTHORS
+  /usr/share/doc/cairo-1.4.6/COPYING
+  /usr/share/doc/cairo-1.4.6/COPYING-LGPL-2.1
+  /usr/share/doc/cairo-1.4.6/COPYING-MPL-1.1
+  /usr/share/doc/cairo-1.4.6/ChangeLog
+  /usr/share/doc/cairo-1.4.6/INSTALL
+  /usr/share/doc/cairo-1.4.6/NEWS
+  /usr/share/doc/cairo-1.4.6/README
+  /usr/share/doc/cairo-1.4.6/TODO
 
 (libcairo2)
   /usr/bin/cygcairo-2.dll
@@ -151,6 +151,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.4.6-1 -----
+Version bump.
 
 ----- version 1.4.4-1 -----
 Version bump.
