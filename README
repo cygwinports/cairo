@@ -19,14 +19,14 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.21-2
-  autoconf2.5-2.60-1
-  automake1.9-1.9.6-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
   binutils-20060817-1
   cygport-0.2.11-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
-  gtk-doc-1.7-1
+  gtk-doc-1.8-1
   libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
@@ -41,34 +41,33 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack cairo-1.4.6-X-src.tar.bz2
+  unpack cairo-1.4.8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./cairo-1.4.6-X.cygport all
+  cygport ./cairo-1.4.8-X.cygport all
 
 This will create:
-  /usr/src/cairo-1.4.6-X-src.tar.bz2
-  /usr/src/cairo-1.4.6-X.tar.bz2
-  /usr/src/cairo-doc-1.4.6-X.tar.bz2
-  /usr/src/libcairo2-1.4.6-X.tar.bz2
-  /usr/src/libcairo-devel-1.4.6-X.tar.bz2
+  /usr/src/cairo-1.4.8-X-src.tar.bz2
+  /usr/src/cairo-1.4.8-X.tar.bz2
+  /usr/src/libcairo2-1.4.8-X.tar.bz2
+  /usr/src/libcairo-devel-1.4.8-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
 (cairo)
-  /usr/share/doc/Cygwin/cairo-1.4.6.README
-  /usr/share/doc/cairo-1.4.6/AUTHORS
-  /usr/share/doc/cairo-1.4.6/COPYING
-  /usr/share/doc/cairo-1.4.6/COPYING-LGPL-2.1
-  /usr/share/doc/cairo-1.4.6/COPYING-MPL-1.1
-  /usr/share/doc/cairo-1.4.6/ChangeLog
-  /usr/share/doc/cairo-1.4.6/INSTALL
-  /usr/share/doc/cairo-1.4.6/NEWS
-  /usr/share/doc/cairo-1.4.6/README
-  /usr/share/doc/cairo-1.4.6/TODO
+  /usr/share/doc/Cygwin/cairo-1.4.8.README
+  /usr/share/doc/cairo-1.4.8/AUTHORS
+  /usr/share/doc/cairo-1.4.8/COPYING
+  /usr/share/doc/cairo-1.4.8/COPYING-LGPL-2.1
+  /usr/share/doc/cairo-1.4.8/COPYING-MPL-1.1
+  /usr/share/doc/cairo-1.4.8/ChangeLog
+  /usr/share/doc/cairo-1.4.8/INSTALL
+  /usr/share/doc/cairo-1.4.8/NEWS
+  /usr/share/doc/cairo-1.4.8/README
+  /usr/share/doc/cairo-1.4.8/TODO
 
 (libcairo2)
   /usr/bin/cygcairo-2.dll
@@ -95,8 +94,6 @@ Files included in the binary packages:
   /usr/lib/pkgconfig/cairo-xlib-xrender.pc
   /usr/lib/pkgconfig/cairo-xlib.pc
   /usr/lib/pkgconfig/cairo.pc
-
-(cairo-doc)
   /usr/share/gtk-doc/html/cairo/Drawing.html
   /usr/share/gtk-doc/html/cairo/Fonts.html
   /usr/share/gtk-doc/html/cairo/Support.html
@@ -151,6 +148,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.4.8-1 -----
+Version bump.
 
 ----- version 1.4.6-1 -----
 Version bump.
