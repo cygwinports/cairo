@@ -8,26 +8,27 @@ media while taking advantage of display hardware acceleration when
 available (eg. through the X Render Extension).
 
 Runtime requirements:
-  cygwin-1.5.25-7
+  cygwin-1.5.25-11
   libX11_6-1.1.3-1
   libXrender1-0.9.4-1
   libfontconfig1-2.3.2-2
   libfreetype26-2.3.5-1
   libglitz1-0.5.6-1
-  libpng12-1.2.24-1
+  libpixman1-0.10.0-1
+  libpng12-1.2.27-1
   zlib-1.2.3-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.25-7
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
+  automake1.10-1.10.1-1
   binutils-20060817-1
-  cygport-0.3.7-1
+  cygport-0.3.10-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gtk-doc-1.9-1
-  libtool1.5-1.5.23a-2
+  gnome-common-2.20.0-2
+  gtk-doc-1.10-1
+  libtool-2.2.2-2
   make-3.81-1
   pkg-config-0.21-1
   sed-4.1.5-2
@@ -41,33 +42,32 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack cairo-1.4.14-X-src.tar.bz2
+  unpack cairo-1.6.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./cairo-1.4.14-X.cygport all
+  cygport ./cairo-1.6.4-X.cygport all
 
 This will create:
-  /usr/src/cairo-1.4.14-X-src.tar.bz2
-  /usr/src/cairo-1.4.14-X.tar.bz2
-  /usr/src/libcairo2-1.4.14-X.tar.bz2
-  /usr/src/libcairo-devel-1.4.14-X.tar.bz2
+  /usr/src/cairo-1.6.4-X-src.tar.bz2
+  /usr/src/cairo-1.6.4-X.tar.bz2
+  /usr/src/libcairo2-1.6.4-X.tar.bz2
+  /usr/src/libcairo-devel-1.6.4-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
 (cairo)
-  /usr/share/doc/Cygwin/cairo-1.4.14.README
-  /usr/share/doc/cairo-1.4.14/AUTHORS
-  /usr/share/doc/cairo-1.4.14/COPYING
-  /usr/share/doc/cairo-1.4.14/COPYING-LGPL-2.1
-  /usr/share/doc/cairo-1.4.14/COPYING-MPL-1.1
-  /usr/share/doc/cairo-1.4.14/ChangeLog
-  /usr/share/doc/cairo-1.4.14/INSTALL
-  /usr/share/doc/cairo-1.4.14/NEWS
-  /usr/share/doc/cairo-1.4.14/README
-  /usr/share/doc/cairo-1.4.14/TODO
+  /usr/share/doc/cairo-1.6.4/AUTHORS
+  /usr/share/doc/cairo-1.6.4/COPYING
+  /usr/share/doc/cairo-1.6.4/COPYING-LGPL-2.1
+  /usr/share/doc/cairo-1.6.4/COPYING-MPL-1.1
+  /usr/share/doc/cairo-1.6.4/ChangeLog
+  /usr/share/doc/cairo-1.6.4/INSTALL
+  /usr/share/doc/cairo-1.6.4/NEWS
+  /usr/share/doc/cairo-1.6.4/README
+  /usr/share/doc/cairo-1.6.4/TODO
 
 (libcairo2)
   /usr/bin/cygcairo-2.dll
@@ -107,7 +107,7 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/cairo/bindings-return-values.html
   /usr/share/gtk-doc/html/cairo/bindings-streams.html
   /usr/share/gtk-doc/html/cairo/bindings-surfaces.html
-  /usr/share/gtk-doc/html/cairo/cairo-Error-handling.html
+  /usr/share/gtk-doc/html/cairo/cairo-Error-Handling.html
   /usr/share/gtk-doc/html/cairo/cairo-Font-Options.html
   /usr/share/gtk-doc/html/cairo/cairo-FreeType-Fonts.html
   /usr/share/gtk-doc/html/cairo/cairo-Image-Surfaces.html
@@ -116,6 +116,8 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/cairo/cairo-Paths.html
   /usr/share/gtk-doc/html/cairo/cairo-Patterns.html
   /usr/share/gtk-doc/html/cairo/cairo-PostScript-Surfaces.html
+  /usr/share/gtk-doc/html/cairo/cairo-Quartz-Fonts.html
+  /usr/share/gtk-doc/html/cairo/cairo-Quartz-Surfaces.html
   /usr/share/gtk-doc/html/cairo/cairo-SVG-Surfaces.html
   /usr/share/gtk-doc/html/cairo/cairo-Scaled-Fonts.html
   /usr/share/gtk-doc/html/cairo/cairo-Text.html
@@ -132,15 +134,14 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/cairo/cairo.devhelp
   /usr/share/gtk-doc/html/cairo/cairo.devhelp2
   /usr/share/gtk-doc/html/cairo/home.png
+  /usr/share/gtk-doc/html/cairo/index-1.2.html
+  /usr/share/gtk-doc/html/cairo/index-1.4.html
+  /usr/share/gtk-doc/html/cairo/index-1.6.html
   /usr/share/gtk-doc/html/cairo/index.html
   /usr/share/gtk-doc/html/cairo/index.sgml
   /usr/share/gtk-doc/html/cairo/ix01.html
-  /usr/share/gtk-doc/html/cairo/ix02.html
-  /usr/share/gtk-doc/html/cairo/ix03.html
   /usr/share/gtk-doc/html/cairo/language-bindings.html
   /usr/share/gtk-doc/html/cairo/left.png
-  /usr/share/gtk-doc/html/cairo/pt01.html
-  /usr/share/gtk-doc/html/cairo/pt02.html
   /usr/share/gtk-doc/html/cairo/right.png
   /usr/share/gtk-doc/html/cairo/style.css
   /usr/share/gtk-doc/html/cairo/up.png
@@ -148,6 +149,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.6.4-1 -----
+Version bump.
 
 ----- version 1.4.14-1 -----
 Version bump.
