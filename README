@@ -8,29 +8,29 @@ media while taking advantage of display hardware acceleration when
 available (eg. through the X Render Extension).
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  libX11_6-1.1.3-1
-  libXrender1-0.9.4-1
-  libfontconfig1-2.3.2-2
-  libfreetype26-2.3.5-1
+  cygwin-1.5.25-15
+  libfontconfig1-2.6.0-1
+  libfreetype26-2.3.7-1
   libglitz1-0.5.6-1
   libpixman1-0.10.0-1
-  libpng12-1.2.27-1
+  libpng12-1.2.31-1
+  libX11_6-1.1.3-1
+  libXrender1-0.9.4-1
   zlib-1.2.3-2
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.61-1
   automake1.10-1.10.1-1
-  binutils-20060817-1
-  cygport-0.3.10-1
+  binutils-20080524-2
+  cygport-0.3.13-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gnome-common-2.20.0-2
   gtk-doc-1.10-1
   libtool-2.2.2-2
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical homepage:
@@ -58,7 +58,8 @@ This will create:
 
 Files included in the binary packages:
 
-(cairo)
+(libcairo2)
+  /usr/bin/cygcairo-2.dll
   /usr/share/doc/cairo-1.6.4/AUTHORS
   /usr/share/doc/cairo-1.6.4/COPYING
   /usr/share/doc/cairo-1.6.4/COPYING-LGPL-2.1
@@ -68,9 +69,6 @@ Files included in the binary packages:
   /usr/share/doc/cairo-1.6.4/NEWS
   /usr/share/doc/cairo-1.6.4/README
   /usr/share/doc/cairo-1.6.4/TODO
-
-(libcairo2)
-  /usr/bin/cygcairo-2.dll
 
 (libcairo-devel)
   /usr/include/cairo/cairo-deprecated.h
@@ -149,6 +147,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.6.4-2 -----
+Patch for change in libpng-1.2.31.
 
 ----- version 1.6.4-1 -----
 Version bump.
