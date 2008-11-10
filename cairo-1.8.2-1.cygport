@@ -3,8 +3,9 @@ inherit gnome2
 DESCRIPTION="Cross-device vector graphics library"
 HOMEPAGE="http://cairographics.org/"
 SRC_URI="http://cairographics.org/releases/${P}.tar.gz"
-PATCH_URI="mirror://portage/x11-libs/${PN}/files/${P}-libpng-api-change.patch
-           1.6-libtool22.patch"
+PATCH_URI="1.8-dolt.patch"
+
+DISTCLEANFILES="src/cairo-features.h"
 
 CYGCONF_ARGS="
 	--disable-directfb
@@ -14,16 +15,14 @@ CYGCONF_ARGS="
 	--enable-pdf
 	--enable-ps
 	--disable-win32
-	--disable-xcb
+	--enable-xcb
 	--enable-xlib
 	--enable-xlib-xrender
 "
 
 DOCS="COPYING-LGPL-2.1 COPYING-MPL-1.1"
 
-abi=2
-PKG_NAMES="${PN} lib${PN}${abi} lib${PN}-devel"
-PKG_HINTS="setup lib devel"
-PKG_CONTENTS[0]=	# empty
-PKG_CONTENTS[1]="usr/bin/*-${abi}.dll usr/share/doc/"
-PKG_CONTENTS[2]='usr/include/ usr/lib/ usr/share/gtk-doc/'
+PKG_NAMES="${PN} lib${PN}2 lib${PN}-devel"
+cairo_CONTENTS=	# empty
+libcairo2_CONTENTS="usr/bin/cygcairo-2.dll usr/share/doc/"
+libcairo_devel_CONTENTS='usr/include/ usr/lib/ usr/share/gtk-doc/'
