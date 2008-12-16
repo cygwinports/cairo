@@ -17,8 +17,8 @@ Runtime requirements:
   libX11_6-1.1.5-1
   libxcb1-1.1-2
   libxcb-render0-1.1-2
-  libxcb-render-util0-0.3.0-1
-  libXrender1-0.9.4-1
+  libxcb-render-util0-0.3.1-1
+  libXrender1-0.9.4-2
   zlib-1.2.3-2
 
 Build requirements:
@@ -45,16 +45,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack cairo-1.8.4-X-src.tar.bz2
+  unpack cairo-1.8.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./cairo-1.8.4-X.cygport all
+  cygport ./cairo-1.8.6-X.cygport all
 
 This will create:
-  /usr/src/cairo-1.8.4-X-src.tar.bz2
-  /usr/src/libcairo2-1.8.4-X.tar.bz2
-  /usr/src/libcairo-devel-1.8.4-X.tar.bz2
+  /usr/src/cairo-1.8.6-X-src.tar.bz2
+  /usr/src/libcairo2-1.8.6-X.tar.bz2
+  /usr/src/libcairo-devel-1.8.6-X.tar.bz2
 
 -------------------------------------------
 
@@ -62,15 +62,15 @@ Files included in the binary packages:
 
 (libcairo2)
   /usr/bin/cygcairo-2.dll
-  /usr/share/doc/cairo-1.8.4/AUTHORS
-  /usr/share/doc/cairo-1.8.4/COPYING
-  /usr/share/doc/cairo-1.8.4/COPYING-LGPL-2.1
-  /usr/share/doc/cairo-1.8.4/COPYING-MPL-1.1
-  /usr/share/doc/cairo-1.8.4/ChangeLog
-  /usr/share/doc/cairo-1.8.4/INSTALL
-  /usr/share/doc/cairo-1.8.4/NEWS
-  /usr/share/doc/cairo-1.8.4/README
-  /usr/share/doc/cairo-1.8.4/TODO
+  /usr/share/doc/cairo-1.8.6/AUTHORS
+  /usr/share/doc/cairo-1.8.6/COPYING
+  /usr/share/doc/cairo-1.8.6/COPYING-LGPL-2.1
+  /usr/share/doc/cairo-1.8.6/COPYING-MPL-1.1
+  /usr/share/doc/cairo-1.8.6/ChangeLog
+  /usr/share/doc/cairo-1.8.6/INSTALL
+  /usr/share/doc/cairo-1.8.6/NEWS
+  /usr/share/doc/cairo-1.8.6/README
+  /usr/share/doc/cairo-1.8.6/TODO
 
 (libcairo-devel)
   /usr/include/cairo/cairo-deprecated.h
@@ -155,6 +155,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.8.6-1 -----
+Version bump.
 
 ----- version 1.8.4-1 -----
 Version bump.
