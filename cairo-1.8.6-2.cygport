@@ -3,7 +3,8 @@ inherit gnome2
 DESCRIPTION="Cross-device vector graphics library"
 HOMEPAGE="http://cairographics.org/"
 SRC_URI="http://cairographics.org/releases/${P}.tar.gz"
-PATCH_URI="1.8-dolt.patch"
+PATCH_URI="1.8-dolt.patch
+           mirror://portage/x11-libs/${PN}/files/${P}-status-return-fix.patch"
 
 DISTCLEANFILES="src/cairo-features.h"
 
