@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libfontconfig1 libfreetype26 libglitz1 libpixman1_0 libpng12 libX11_6 libxcb1 libxcb-render0 libxcb-render-util0 libXrender1 zlib
+requires: cygwin libfontconfig1 libfreetype6 libgcc1 libglitz1 libpixman1_0 libpng12 libX11_6 libxcb1 libxcb-render0 libxcb-render-util0 libXrender1 zlib0
 external-source: cairo
 sdesc: "Cross-device vector graphics library (runtime)"
 ldesc: "Cairo is a vector graphics library with cross-device output
