@@ -8,32 +8,32 @@ media while taking advantage of display hardware acceleration when
 available (eg. through the X Render Extension).
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-50
   libfontconfig1-2.6.0-10
   libfreetype6-2.3.9-1
   libglitz1-0.5.6-10
   libpixman1_0-0.14.0-1
   libpng12-1.2.35-10
-  libX11_6-1.2-10
-  libxcb1-1.2-10
-  libxcb-render0-1.2-10
-  libxcb-render-util0-0.3.3-10
+  libX11_6-1.2.1-1
+  libxcb1-1.2.1-1
+  libxcb-render0-1.2.1-1
+  libxcb-render-util0-0.3.5-1
   libXrender1-0.9.4-10
   zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
+  automake1.10-1.10.2-10
   binutils-20080624-2
-  cygport-0.9.6-1
+  cygport-0.9.7-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
-  gnome-common-2.26.0-1
+  gnome-common-2.26.0-2
   gtk-doc-1.11-2
-  libtool-2.2.7a-11
+  libtool-2.2.7a-13
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical homepage:
@@ -45,16 +45,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack cairo-1.8.6-X-src.tar.bz2
+  unpack cairo-1.8.8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./cairo-1.8.6-X.cygport all
+  cygport ./cairo-1.8.8-X.cygport all
 
 This will create:
-  /usr/src/cairo-1.8.6-X-src.tar.bz2
-  /usr/src/libcairo2-1.8.6-X.tar.bz2
-  /usr/src/libcairo-devel-1.8.6-X.tar.bz2
+  /usr/src/cairo-1.8.8-X-src.tar.bz2
+  /usr/src/libcairo2-1.8.8-X.tar.bz2
+  /usr/src/libcairo-devel-1.8.8-X.tar.bz2
 
 -------------------------------------------
 
@@ -154,6 +154,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.8.8-1 -----
+Version bump.
 
 ----- version 1.8.6-10 -----
 Initial release for Cygwin 1.7.
