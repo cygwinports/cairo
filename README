@@ -8,33 +8,34 @@ media while taking advantage of display hardware acceleration when
 available (eg. through the X Render Extension).
 
 Runtime requirements:
-  cygwin-1.7.0-50
-  libfontconfig1-2.6.0-10
-  libfreetype6-2.3.9-1
+  cygwin-1.7.5-1
+  libfontconfig1-2.8.0-1
+  libfreetype6-2.3.12-1
+  libgcc1-4.3.4-3
   libglitz1-0.5.6-10
-  libpixman1_0-0.14.0-1
+  libpixman1_0-0.18.0-1
   libpng12-1.2.35-10
-  libX11_6-1.2.1-1
-  libxcb1-1.2.1-1
-  libxcb-render0-1.2.1-1
-  libxcb-render-util0-0.3.5-1
-  libXrender1-0.9.4-10
+  libX11_6-1.3.3-1
+  libxcb1-1.6-1
+  libxcb-render0-1.6-1
+  libxcb-render-util0-0.3.6-1
+  libXrender1-0.9.5-1
   zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
-  binutils-20080624-2
-  cygport-0.9.7-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gnome-common-2.26.0-2
-  gtk-doc-1.11-2
-  libtool-2.2.7a-13
+  autoconf2.5-2.65-1
+  automake1.11-1.11.1-1
+  binutils-2.20.51-1
+  cygport-0.9.83-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  gnome-common-2.28.0-1
+  gtk-doc-1.13-1
+  libtool-2.2.7a-15
   make-3.81-2
   pkg-config-0.23b-10
-  sed-4.1.5-2
+  sed-4.2.1-1
 
 Canonical homepage:
   http://cairographics.org/
@@ -45,115 +46,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack cairo-1.8.8-X-src.tar.bz2
+  unpack cairo-1.8.10-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./cairo-1.8.8-X.cygport all
+  cygport ./cairo-1.8.10-X.cygport all
 
 This will create:
-  /usr/src/cairo-1.8.8-X-src.tar.bz2
-  /usr/src/libcairo2-1.8.8-X.tar.bz2
-  /usr/src/libcairo-devel-1.8.8-X.tar.bz2
+  /usr/src/cairo-1.8.10-X-src.tar.bz2
+  /usr/src/libcairo2-1.8.10-X.tar.bz2
+  /usr/src/libcairo-devel-1.8.10-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(libcairo2)
-  /usr/bin/cygcairo-2.dll
-  /usr/share/doc/cairo/AUTHORS
-  /usr/share/doc/cairo/COPYING
-  /usr/share/doc/cairo/COPYING-LGPL-2.1
-  /usr/share/doc/cairo/COPYING-MPL-1.1
-  /usr/share/doc/cairo/ChangeLog
-  /usr/share/doc/cairo/NEWS
-  /usr/share/doc/cairo/README
-  /usr/share/doc/cairo/TODO
-
-(libcairo-devel)
-  /usr/include/cairo/cairo-deprecated.h
-  /usr/include/cairo/cairo-features.h
-  /usr/include/cairo/cairo-ft.h
-  /usr/include/cairo/cairo-glitz.h
-  /usr/include/cairo/cairo-pdf.h
-  /usr/include/cairo/cairo-ps.h
-  /usr/include/cairo/cairo-svg.h
-  /usr/include/cairo/cairo-version.h
-  /usr/include/cairo/cairo-xcb-xrender.h
-  /usr/include/cairo/cairo-xcb.h
-  /usr/include/cairo/cairo-xlib-xrender.h
-  /usr/include/cairo/cairo-xlib.h
-  /usr/include/cairo/cairo.h
-  /usr/lib/libcairo.dll.a
-  /usr/lib/libcairo.la
-  /usr/lib/pkgconfig/cairo-ft.pc
-  /usr/lib/pkgconfig/cairo-glitz.pc
-  /usr/lib/pkgconfig/cairo-pdf.pc
-  /usr/lib/pkgconfig/cairo-png.pc
-  /usr/lib/pkgconfig/cairo-ps.pc
-  /usr/lib/pkgconfig/cairo-svg.pc
-  /usr/lib/pkgconfig/cairo-xcb.pc
-  /usr/lib/pkgconfig/cairo-xlib-xrender.pc
-  /usr/lib/pkgconfig/cairo-xlib.pc
-  /usr/lib/pkgconfig/cairo.pc
-  /usr/share/gtk-doc/html/cairo/bindings-errors.html
-  /usr/share/gtk-doc/html/cairo/bindings-fonts.html
-  /usr/share/gtk-doc/html/cairo/bindings-memory.html
-  /usr/share/gtk-doc/html/cairo/bindings-overloading.html
-  /usr/share/gtk-doc/html/cairo/bindings-path.html
-  /usr/share/gtk-doc/html/cairo/bindings-patterns.html
-  /usr/share/gtk-doc/html/cairo/bindings-return-values.html
-  /usr/share/gtk-doc/html/cairo/bindings-streams.html
-  /usr/share/gtk-doc/html/cairo/bindings-surfaces.html
-  /usr/share/gtk-doc/html/cairo/cairo-context.html
-  /usr/share/gtk-doc/html/cairo/cairo-drawing.html
-  /usr/share/gtk-doc/html/cairo/cairo-error-status.html
-  /usr/share/gtk-doc/html/cairo/cairo-font-face.html
-  /usr/share/gtk-doc/html/cairo/cairo-font-options.html
-  /usr/share/gtk-doc/html/cairo/cairo-fonts.html
-  /usr/share/gtk-doc/html/cairo/cairo-ft-font.html
-  /usr/share/gtk-doc/html/cairo/cairo-image-surface.html
-  /usr/share/gtk-doc/html/cairo/cairo-matrix.html
-  /usr/share/gtk-doc/html/cairo/cairo-paths.html
-  /usr/share/gtk-doc/html/cairo/cairo-pattern.html
-  /usr/share/gtk-doc/html/cairo/cairo-pdf-surface.html
-  /usr/share/gtk-doc/html/cairo/cairo-png-functions.html
-  /usr/share/gtk-doc/html/cairo/cairo-ps-surface.html
-  /usr/share/gtk-doc/html/cairo/cairo-quartz-font.html
-  /usr/share/gtk-doc/html/cairo/cairo-quartz-surface.html
-  /usr/share/gtk-doc/html/cairo/cairo-scaled-font.html
-  /usr/share/gtk-doc/html/cairo/cairo-support.html
-  /usr/share/gtk-doc/html/cairo/cairo-surface.html
-  /usr/share/gtk-doc/html/cairo/cairo-surfaces.html
-  /usr/share/gtk-doc/html/cairo/cairo-svg-surface.html
-  /usr/share/gtk-doc/html/cairo/cairo-text.html
-  /usr/share/gtk-doc/html/cairo/cairo-transformations.html
-  /usr/share/gtk-doc/html/cairo/cairo-types.html
-  /usr/share/gtk-doc/html/cairo/cairo-user-font.html
-  /usr/share/gtk-doc/html/cairo/cairo-version-info.html
-  /usr/share/gtk-doc/html/cairo/cairo-win32-font.html
-  /usr/share/gtk-doc/html/cairo/cairo-win32-surface.html
-  /usr/share/gtk-doc/html/cairo/cairo-xlib-surface.html
-  /usr/share/gtk-doc/html/cairo/cairo.devhelp
-  /usr/share/gtk-doc/html/cairo/cairo.devhelp2
-  /usr/share/gtk-doc/html/cairo/home.png
-  /usr/share/gtk-doc/html/cairo/index-1.2.html
-  /usr/share/gtk-doc/html/cairo/index-1.4.html
-  /usr/share/gtk-doc/html/cairo/index-1.6.html
-  /usr/share/gtk-doc/html/cairo/index-1.8.html
-  /usr/share/gtk-doc/html/cairo/index-all.html
-  /usr/share/gtk-doc/html/cairo/index.html
-  /usr/share/gtk-doc/html/cairo/index.sgml
-  /usr/share/gtk-doc/html/cairo/language-bindings.html
-  /usr/share/gtk-doc/html/cairo/left.png
-  /usr/share/gtk-doc/html/cairo/right.png
-  /usr/share/gtk-doc/html/cairo/style.css
-  /usr/share/gtk-doc/html/cairo/up.png
-
-------------------
-
 Port Notes:
+
+----- version 1.8.10-1 -----
+Version bump.
 
 ----- version 1.8.8-1 -----
 Version bump.
