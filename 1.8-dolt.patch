@@ -4,7 +4,7 @@
  i?86-apple-darwin*)
      pic_options='-fno-common'
      ;;
-+i?86-pc-cygwin*)
++*-*-cygwin*|*-*-mingw*)
 +    pic_options='-DDLL_EXPORT'
 +    ;;
  *)
