@@ -23,7 +23,7 @@ CYGCONF_ARGS="
 
 DOCS="COPYING-LGPL-2.1 COPYING-MPL-1.1"
 
-PKG_NAMES="${PN} lib${PN}2 lib${PN}-devel"
+PKG_NAMES="lib${PN}2 lib${PN}-devel"
 cairo_CONTENTS=	# empty
 libcairo2_CONTENTS="usr/bin/*-2.dll usr/share/doc/"
 libcairo_devel_CONTENTS='usr/include/ usr/lib/ usr/share/gtk-doc/'
