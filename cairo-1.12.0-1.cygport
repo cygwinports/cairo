@@ -8,11 +8,16 @@ DISTCLEANFILES="src/cairo-features.h"
 
 CYGCONF_ARGS="
 	--disable-directfb
+	--enable-fc
 	--enable-ft
+	--enable-gobject
+	--enable-interpreter
 	--enable-png
 	--enable-pdf
 	--enable-ps
+	--enable-pthread
 	--disable-quartz
+	--enable-script
 	--enable-svg
 	--disable-win32
 	--enable-xcb
