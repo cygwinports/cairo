@@ -2,7 +2,7 @@ inherit gnome2
 
 DESCRIPTION="Cross-device vector graphics library"
 HOMEPAGE="http://cairographics.org/"
-SRC_URI="http://cairographics.org/releases/${P}.tar.gz"
+SRC_URI="http://cairographics.org/releases/${P}.tar.xz"
 
 DISTCLEANFILES="src/cairo-features.h"
 
