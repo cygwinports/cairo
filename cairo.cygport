@@ -1,6 +1,14 @@
 inherit gnome2
 
-DESCRIPTION="Cross-device vector graphics library"
+NAME="cairo"
+VERSION=1.12.2
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="Cross-device vector graphics library"
+DESCRIPTION="Cairo is a 2D graphics library with support for multiple output
+devices. Currently supported output targets include the X Window System
+(via both Xlib and XCB), quartz, win32, and image buffers, as well as PDF,
+PostScript, and SVG file output."
 HOMEPAGE="http://cairographics.org/"
 SRC_URI="http://cairographics.org/releases/${P}.tar.xz"
 
@@ -29,6 +37,5 @@ CYGCONF_ARGS="
 DOCS="COPYING-LGPL-2.1 COPYING-MPL-1.1"
 
 PKG_NAMES="lib${PN}2 lib${PN}-devel"
-cairo_CONTENTS=	# empty
 libcairo2_CONTENTS="usr/bin/*-2.dll usr/share/doc/"
 libcairo_devel_CONTENTS='usr/include/ usr/lib/ usr/share/gtk-doc/'
