@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="cairo"
-VERSION=1.12.12
+VERSION=1.12.14
 RELEASE=1
 CATEGORY="X11"
 SUMMARY="Cross-device vector graphics library"
