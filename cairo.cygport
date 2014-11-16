@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="cairo"
-VERSION=1.12.16
+VERSION=1.12.18
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Cross-device vector graphics library"
@@ -19,6 +19,7 @@ CYGCONF_ARGS="
 	--disable-directfb
 	--enable-fc
 	--enable-ft
+	--enable-gl --enable-egl --enable-glx --disable-wgl
 	--enable-gobject
 	--enable-interpreter
 	--enable-png
