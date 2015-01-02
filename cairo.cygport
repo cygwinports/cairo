@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="cairo"
 VERSION=1.12.18
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="Cross-device vector graphics library"
 DESCRIPTION="Cairo is a 2D graphics library with support for multiple output
