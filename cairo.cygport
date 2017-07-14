@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="cairo"
-VERSION=1.14.8
+VERSION=1.14.10
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Cross-device vector graphics library"
@@ -15,11 +15,12 @@ PATCH_URI="1.12.14-cairo-gobject-lto.patch"
 
 DISTCLEANFILES="src/cairo-features.h"
 
+# gl: unmaintained, unused, heavy deps
 CYGCONF_ARGS="
 	--disable-directfb
 	--enable-fc
 	--enable-ft
-	--enable-gl --enable-egl --enable-glx --disable-wgl
+	--disable-gl
 	--enable-gobject
 	--enable-interpreter
 	--enable-png
